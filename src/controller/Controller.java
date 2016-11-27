@@ -52,8 +52,6 @@ public class Controller extends HttpServlet {
 		out.write("<html>");
 		out.write("email via post: " + email);
     	out.write("<html>");
-
-		
 	}
 
 }

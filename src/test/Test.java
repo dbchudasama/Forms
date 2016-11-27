@@ -7,7 +7,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		//Creating new user bean
-		User user = new User("divyeshchudasma@abc.com", "abcdfhglg");
+		User user = new User("divyeshchudasama@abc.com", "abcdfhglg");
 		
 		if(user.validate()) {
 			System.out.println("Bean validates OK.");
