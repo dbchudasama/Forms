@@ -40,12 +40,22 @@ public class User {
 	//Validation subroutine to validate email address and password entered
 	public boolean validate() {
 		
-		if(!email.matches("\\w+@\\w+\\.\\w+")) {
+		if(email == null) {
 			message = "Invalid email address";
 			return false;
 		}
 		
-		if (password.length() < 8) {
+		else if(password == null) {
+			message = "Invalid password";
+			return false;
+		}
+		
+		else if(!email.matches("\\w+@\\w+\\.\\w+")) {
+			message = "Invalid email address";
+			return false;
+		}
+		
+		else if (password.length() < 8) {
 			message = "Password must be at least 8 characters";
 			return false;
 		}
