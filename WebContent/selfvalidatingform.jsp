@@ -28,7 +28,7 @@
 	<!-- If validation fails then print message. Wrapping in header. -->
 	<h2><jsp:getProperty property="message" name="user1" /></h2>
 
-	<!-- Making this submit to itself to allow self validation. -->
+	<!-- Making this submit to itself to allow self validation. This is NOT working as needed, will look at later-->
 	<form action="/Forms/selfvalidatingform.jsp" method="post">
 
 		<!-- With forms ALWAYS use POST instead of GET unless you want users to send parameters across via the URL -->
