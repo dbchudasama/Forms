@@ -33,9 +33,11 @@ public class Controller extends HttpServlet {
 		
 		/*Here fetching the parameter 'user' from form1.jsp. This will be typed in by user*/
 		String email = request.getParameter("email");
+		String password = request.getParameter("password");
 		
 		out.write("<html>");
 		out.write("email via get: " + email);
+		out.write("\n" + "password via get: " + password);
     	out.write("<html>");
 
 	}
@@ -48,9 +50,11 @@ public class Controller extends HttpServlet {
 		
 		/*Here fetching the parameter 'user' from form1.jsp. This will be typed in by user*/
 		String email = request.getParameter("email");
+		String password = request.getParameter("password");
 		
 		out.write("<html>");
 		out.write("email via post: " + email);
+		out.write("\n" + "password via get:" + password);
     	out.write("<html>");
 	}
 

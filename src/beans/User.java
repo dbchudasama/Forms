@@ -39,7 +39,7 @@ public class User {
 	
 	//Validation subroutine to validate email address and password entered
 	public boolean validate() {
-		
+	
 		if(email == null) {
 			message = "Invalid email address";
 			return false;
@@ -50,7 +50,8 @@ public class User {
 			return false;
 		}
 		
-		else if(!email.matches("\\w+@\\w+\\.\\w+")) {
+		//Using all alpha numeric characters (and format) for email address mismatch.
+		else if(!email.matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$")) {
 			message = "Invalid email address";
 			return false;
 		}
